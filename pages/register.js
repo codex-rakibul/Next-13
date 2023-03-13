@@ -3,6 +3,7 @@ import Link from "next/link";
 import Layout from "../layout/layout";
 import styles from "../styles/Register.module.css";
 import { useFormik } from "formik";
+import { useState } from "react";
 const Register = () => {
   const [show, setShow] = useState({password: false, cpassword:false})
   const formik = useFormik({
